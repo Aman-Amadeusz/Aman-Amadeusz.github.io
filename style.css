@@ -4,6 +4,15 @@ body .bg {
   background-repeat: no-repeat;
 }
 
+body .menu {
+  position: relative;
+  border: 1px dotted red;
+}
+
+body .menu:hover {
+  display: none;
+}
+
 body ul {
   list-style-type: none;
   padding: 1%;
@@ -28,6 +37,7 @@ body ul {
 
 body li {
   position: relative;
+  display: inline-block;
 }
 
 body ul > li:hover > .dropdown-content {
@@ -46,5 +56,12 @@ body .dropdown-content {
   display: none;
   left: 0;
   top: 37px;
+}
+
+body .quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

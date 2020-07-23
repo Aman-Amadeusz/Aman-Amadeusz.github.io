@@ -4,6 +4,15 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     }
+    .menu{
+        position: relative;
+        border: 1px dotted red;
+    }
+
+
+    .menu:hover{
+        display: none;
+    }
     ul{
         list-style-type: none;
         padding: 1%;
@@ -21,7 +30,7 @@ body{
     }
     li{
         position: relative;
-
+        display: inline-block;
 
     }
 
@@ -42,7 +51,10 @@ body{
         top: 37px;
     
     }
-
+    .quotes{
+        display: flex;
+        width: 100%;
+    }
 
 
 
