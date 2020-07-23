@@ -3,4 +3,39 @@ body .bg {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+body ul {
+  list-style-type: none;
+  padding: 1%;
+}
+
+body ul {
+  background-color: rgba(116, 109, 109, 0.801);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body ul > li:hover > .dropdown-content {
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+  display: inline-block;
+}
+
+body .dropdown-content {
+  width: 100%;
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

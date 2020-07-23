@@ -4,6 +4,35 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     }
+    ul{
+        list-style-type: none;
+        padding: 1%;
+    }
+    ul{
+        background-color: rgba(116, 109, 109, 0.801);
+        position: sticky;
+        top: 0%;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    ul>li:hover > .dropdown-content{
+        position: relative;
+        transition: 1s;
+        width: 100%;
+        display: inline-block;
+    }
+    .dropdown-content{
+        width: 100%;
+        display: none;
+
+    }
+
 
 
 
