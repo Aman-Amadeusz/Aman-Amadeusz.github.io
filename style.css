@@ -1,24 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .firstScene {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+body .firstScene .kurtyny {
+  position: relative;
+}
+
+body .firstScene .kurtyny div {
+  position: absolute;
+  border: 2px solid #000;
+  height: 70vh;
+  width: 120vw;
+}
+
+body .firstScene .kurtyny .lewa {
+  top: -30vh;
+  left: -10vw;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background-color: #a5d1a5;
+}
+
+body .firstScene .kurtyny .prawa {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background-color: yellow;
+  top: 60vh;
+  left: -10vw;
+}
+
+body .firstScene .haslo {
+  background-color: #8400ff;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .secScene {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body .bg {
   background-image: url("img/Grunge-Wallpaper-055.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-body .menu {
+body .bg .menu {
   position: relative;
   border: 1px dotted red;
 }
 
-body .menu:hover {
-  display: none;
-}
-
-body ul {
+body .bg ul {
   list-style-type: none;
   padding: 1%;
 }
 
-body ul {
+body .bg ul {
   background-color: rgba(116, 109, 109, 0.801);
   position: -webkit-sticky;
   position: sticky;
@@ -35,33 +112,36 @@ body ul {
   margin-bottom: 0;
 }
 
-body li {
+body .bg li {
   position: relative;
   display: inline-block;
+  border: 2px dashed red;
+  width: 30%;
+  text-align: center;
+  padding: 2%;
 }
 
-body ul > li:hover > .dropdown-content {
-  position: relative;
+body .bg ul > li:hover > .dropdown-content {
   -webkit-transition: 2s;
   transition: 2s;
-  width: 100%;
-  display: inline-block;
+  display: block;
 }
 
-body .dropdown-content {
+body .bg .dropdown-content {
   background-color: #666363;
   border: red dotted 1px;
-  position: absolute !important;
-  width: 100%;
   display: none;
+  position: absolute;
+  background-color: green;
+  width: 100%;
+  padding: 2%;
   left: 0;
-  top: 37px;
+  top: 102%;
 }
 
-body .quotes {
+body .bg .quotes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
