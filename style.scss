@@ -28,9 +28,10 @@ body{
         display: inline-block;
     }
     .dropdown-content{
+        position: absolute;
+    
         width: 100%;
         display: none;
-
     }
 
 

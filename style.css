@@ -35,6 +35,7 @@ body ul > li:hover > .dropdown-content {
 }
 
 body .dropdown-content {
+  position: absolute;
   width: 100%;
   display: none;
 }
