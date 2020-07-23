@@ -26,17 +26,25 @@ body ul {
   margin-bottom: 0;
 }
 
+body li {
+  position: relative;
+}
+
 body ul > li:hover > .dropdown-content {
   position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
   width: 100%;
   display: inline-block;
 }
 
 body .dropdown-content {
-  position: absolute;
+  background-color: #666363;
+  border: red dotted 1px;
+  position: absolute !important;
   width: 100%;
   display: none;
+  left: 0;
+  top: 37px;
 }
 /*# sourceMappingURL=style.css.map */
