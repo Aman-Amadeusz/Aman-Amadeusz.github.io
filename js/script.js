@@ -1,5 +1,4 @@
 function hideSecScene(){
-    let scene = document.querySelector(".secScene");
-    scene.style.display = "none";
+    $(".secScene").fadeOut("2000");
 }
 //hideSecScene();
