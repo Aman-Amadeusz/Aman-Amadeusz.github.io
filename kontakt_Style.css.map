@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AACI,MADE,CACF,IAAI,CAAA;EACA,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,KAAK;CACf",
+    "mappings": "AAAA,AACI,MADE,CACF,IAAI,CAAA;EACA,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,eAAe,EAAE,MAAM;CAG1B",
     "sources": [
         "kontakt_Style.scss"
     ],
