@@ -136,20 +136,22 @@ body{
             justify-content: right;
             flex-direction: row;
             height: fit-content;
-            background-color: red;
+
             right: -42px;
                &:before{
-                    content: "<";
+                    content:"<-->";
+                    font-style: oblique;
+                    color: white;
                     position: absolute;
                     width: 30px;
                     left: -30px;
-                    background-color: red;
-               
+
+                 }
                 &:hover{
-                    right: 0;
+                    right: 0!important;
                     transition: 1s;
                 } 
-        }       
+    }       
         
         .icon{
             color: white;
@@ -157,6 +159,6 @@ body{
             font-size: 30px;
 
         }
-        }
+        
 
 }

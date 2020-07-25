@@ -188,25 +188,25 @@ body .hide {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: red;
   right: -42px;
 }
 
 body .hide:before {
-  content: "<";
+  content: "<-->";
+  font-style: oblique;
+  color: white;
   position: absolute;
   width: 30px;
   left: -30px;
-  background-color: red;
 }
 
-body .hide:before:hover {
-  right: 0;
+body .hide:hover {
+  right: 0 !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .hide .icon {
+body .icon {
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,MADE,CACF,IAAI,CAAA;EACA,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "kontakt_Style.scss"
+    ],
+    "names": [],
+    "file": "kontakt_Style.css"
+}
