@@ -190,10 +190,21 @@ body .hide {
   height: -moz-fit-content;
   height: fit-content;
   background-color: red;
+  right: -42px !important;
 }
 
 body .hide:before {
   content: "<";
+  position: absolute;
+  width: 30px;
+  left: -30px;
+  background-color: red;
+}
+
+body .hide:before:hover {
+  right: 0 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .hide .icon {

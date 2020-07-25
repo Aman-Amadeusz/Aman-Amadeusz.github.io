@@ -138,10 +138,19 @@ body{
             flex-direction: row;
             height: fit-content;
             background-color: red;
+            right: -42px!important;
                &:before{
                     content: "<";
-               } 
-
+                    position: absolute;
+                    width: 30px;
+                    left: -30px;
+                    background-color: red;
+               
+                &:hover{
+                    right: 0!important;
+                    transition: 1s;
+                } 
+        }       
         
         .icon{
             color: white;
