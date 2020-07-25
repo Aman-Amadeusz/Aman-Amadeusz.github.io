@@ -19,4 +19,4 @@ function firstInput(){
     }
     
 }
-$(".firstScene").hide()
+$(".firstScene").hide();

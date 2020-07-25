@@ -143,14 +143,10 @@ body .bg .quotes {
   width: 100%;
 }
 
-body .bg .logOut {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 0;
-}
-
-body .bg .foot {
-  color: red;
+body .bg .hide {
+  border: 2px dotted black;
+  display: grid "a" "b";
+  text-align: right;
+  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */

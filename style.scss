@@ -106,16 +106,20 @@ body{
             top:102%;  
         }
         .quotes{
-        display: flex;
-        width: 100%;
-        }
-        .logOut{
             display: flex;
-            top: 0;
+            width: 100%;
         }
-        .foot{
-            color: red;
+        .hide{
+            border: 2px dotted black;
+            display: grid
+                "a"
+                "b"
+            ;
+            text-align: right;
+            background-color: grey;
+            
+            }
         }
-    }
+    
 
 }
