@@ -1,3 +1,9 @@
+body {
+  background-image: url("img/dark_Village.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 body .firstScene {
   position: fixed;
   width: 100%;
@@ -77,12 +83,6 @@ body .secScene {
   color: white;
 }
 
-body .bg {
-  background-image: url("img/Grunge-Wallpaper-055.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 body .bg .menu {
   position: relative;
   border: 1px dotted red;
@@ -94,7 +94,7 @@ body .bg ul {
 }
 
 body .bg ul {
-  background-color: rgba(116, 109, 109, 0.801);
+  background-color: #161616;
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
@@ -105,7 +105,7 @@ body .bg ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 70%;
+  width: 80%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -113,9 +113,9 @@ body .bg ul {
 body .bg li {
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 10%;
   text-align: center;
-  padding: 2%;
+  padding: 0%;
 }
 
 body .bg ul > li:hover > .dropdown-content {
@@ -126,7 +126,6 @@ body .bg ul > li:hover > .dropdown-content {
 
 body .bg .dropdown-content {
   background-color: #666363;
-  border: red dotted 1px;
   display: none;
   position: absolute;
   background-color: grey;
@@ -143,10 +142,58 @@ body .bg .quotes {
   width: 100%;
 }
 
+body .bg .text {
+  color: white;
+  text-align: center;
+}
+
 body .bg .hide {
-  border: 2px dotted black;
-  display: grid "a" "b";
-  text-align: right;
-  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .bg .hide .icon {
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 30px;
+}
+
+body footer .hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .hide .icon {
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
