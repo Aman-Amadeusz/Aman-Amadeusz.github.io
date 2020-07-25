@@ -2,9 +2,39 @@ header .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .img img {
+  border-radius: 30%;
+  height: 10%;
+  width: 10%;
+}
+
+header .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: dotted 1px red;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  right: 0;
+}
+
+header .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px dotted red;
+  width: 500px;
+  height: 500px;
+  left: 0;
+  top: 0;
 }
 /*# sourceMappingURL=kontakt_Style.css.map */

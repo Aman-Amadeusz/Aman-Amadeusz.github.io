@@ -1,9 +1,29 @@
 header{
     .img{
         display: flex;
-        border-radius: 50%;
         justify-content: center;
+        align-items: center;
 
-        
+        img{
+            border-radius: 30%;
+            height: 10%;
+            width: 10%;
+        }        
+    }
+    .about{
+        display: flex;
+        border: dotted 1px red;
+        width: 500px;
+        height: 500px;
+        top: 0;
+        right: 0;
+    }
+    .skill{
+        display: flex;
+        border: 1px dotted red;
+        width: 500px;
+        height: 500px;
+        left: 0;
+        top: 0;
     }
 }
