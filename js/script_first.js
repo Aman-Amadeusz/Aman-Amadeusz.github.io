@@ -17,4 +17,6 @@ function firstInput(){
         
 
     }
+    
 }
+$(".firstScene").hide;
