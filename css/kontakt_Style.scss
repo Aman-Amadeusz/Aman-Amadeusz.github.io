@@ -1,0 +1,48 @@
+html
+body{
+header{
+    
+    
+    .CV{
+        display: grid;
+        grid-template-areas:
+        "about img skill"
+        "future img contact" ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        }
+        .about{
+            grid-area:about;
+        border: dotted 1px red;
+       // width: 500px;
+       // height: 500px;
+
+        
+        }
+        .skill{
+            grid-area:skill;
+        border: 1px dotted red;
+       // width: 500px;
+       // height: 500px;
+
+        }
+        .future{
+            grid-area:future;
+        }
+        .contact{
+        grid-area: contact;
+        }
+        .img{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+    
+            img{
+                border-radius: 30%;
+                height: 10%;
+                width: 10%;
+            } 
+    }
+}
+}
