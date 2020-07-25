@@ -1,6 +1,6 @@
 header{
     .img{
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
 
@@ -11,19 +11,31 @@ header{
         }        
     }
     .about{
-        display: flex;
+        display: grid;
         border: dotted 1px red;
-        width: 500px;
-        height: 500px;
-        top: 0;
-        right: 0;
+       // width: 500px;
+       // height: 500px;
+
+        
     }
     .skill{
-        display: flex;
+        display: grid;
         border: 1px dotted red;
-        width: 500px;
-        height: 500px;
-        left: 0;
-        top: 0;
+       // width: 500px;
+       // height: 500px;
+
+    }
+    .future{
+        display: grid;
+    }
+    .contact{
+        display: grid;
+    }
+    div{
+        display: grid;
+        grid-area: auto;
+        grid-template-columns:"about img skill
+                               future img contact" ;
+
     }
 }

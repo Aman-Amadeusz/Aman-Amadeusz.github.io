@@ -1,7 +1,6 @@
 header .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -17,24 +16,32 @@ header .img img {
 }
 
 header .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   border: dotted 1px red;
-  width: 500px;
-  height: 500px;
-  top: 0;
-  right: 0;
 }
 
 header .skill {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   border: 1px dotted red;
-  width: 500px;
-  height: 500px;
-  left: 0;
-  top: 0;
+}
+
+header .future {
+  display: -ms-grid;
+  display: grid;
+}
+
+header .contact {
+  display: -ms-grid;
+  display: grid;
+}
+
+header div {
+  display: -ms-grid;
+  display: grid;
+  grid-area: auto;
+  -ms-grid-columns: "about img skill future img contact";
+      grid-template-columns: "about img skill future img contact";
 }
 /*# sourceMappingURL=kontakt_Style.css.map */
