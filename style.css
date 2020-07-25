@@ -1,6 +1,6 @@
 body {
   background-image: url("img/dark_Village.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -151,16 +151,16 @@ body .bg .hide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   text-align: center;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
 }
 
 body .bg .hide .icon {
@@ -172,7 +172,7 @@ body .bg .hide .icon {
   font-size: 30px;
 }
 
-body footer .hide {
+body .hide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,9 +186,17 @@ body footer .hide {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: red;
 }
 
-body footer .hide .icon {
+body .hide:before {
+  content: "<";
+}
+
+body .hide .icon {
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

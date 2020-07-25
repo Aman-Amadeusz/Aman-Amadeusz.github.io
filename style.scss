@@ -1,6 +1,6 @@
 body{        
     background-image: url("img/dark_Village.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     .firstScene{
         position: fixed;
@@ -116,10 +116,11 @@ body{
         }
         .hide{
             display: flex;
-            position: sticky;
+            position: fixed;
             text-align: center;
             justify-content: right;
-            flex-direction: row;
+            flex-direction: column;
+            right: 0;
 
         
         .icon{
@@ -129,20 +130,25 @@ body{
         }
         }
     }
-    footer{
         .hide{
             display: flex;
             position: sticky;
             text-align: center;
             justify-content: right;
             flex-direction: row;
+            height: fit-content;
+            background-color: red;
+               &:before{
+                    content: "<";
+               } 
 
         
         .icon{
             color: white;
             flex-direction: column;
             font-size: 30px;
+
         }
         }
-    }
+
 }
