@@ -20,7 +20,6 @@ body .firstScene .kurtyna {
 
 body .firstScene .kurtyna div {
   position: absolute;
-  border: 2px solid #000;
   height: 70vh;
   width: 120vw;
 }
@@ -31,6 +30,8 @@ body .firstScene .kurtyna .up {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   background-color: #333131;
+  -webkit-box-shadow: 20px 20px 40px;
+          box-shadow: 20px 20px 40px;
 }
 
 body .firstScene .kurtyna .down {
@@ -85,7 +86,6 @@ body .secScene {
 
 body .bg .menu {
   position: relative;
-  border: 1px dotted red;
 }
 
 body .bg ul {
@@ -95,6 +95,8 @@ body .bg ul {
 
 body .bg ul {
   background-color: #161616;
+  -webkit-box-shadow: 10px 10px 20px;
+          box-shadow: 10px 10px 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
@@ -143,8 +145,15 @@ body .bg .quotes {
 }
 
 body .bg .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  right: 0;
 }
 
 body .bg .hide {
