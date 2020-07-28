@@ -1,48 +1,58 @@
-html
+html,
 body{
-header{
-    
-    
-    .CV{
+
+
+  height:100%;
+  header{
+
+    text-align: center;
+    height:100%;
+    .grid{
+        padding: 2%;
         display: grid;
         grid-template-areas:
-        "about img skill"
-        "future img contact" ;
+            "about img skill"
+            "future img contact";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        height:100%;
+      .img{
+        grid-area:img ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 50%;
+            width: 50%;
+        }        
+      }
+      .about{
+          border: solid 2px rgb(31, 30, 30);
+          box-shadow: 2px 2px 4px ;
+          text-align: center;  
+          grid-area: about;
+          border-radius: 25px;
+      }
+      .skill{
+        grid-area:skill ;
+        border: solid 2px black;
+        box-shadow: 2px 2px 4px ;
+        border-radius: 25px;
+      }
+      .future{
+        grid-area: future;
+        border: solid 2px black;
+        box-shadow: 2px 2px 4px ;
+        border-radius: 25px;
+      }
+      .contact{
+        grid-area:contact;
+        border: solid 2px black;
+        box-shadow: 2px 2px 4px;
+        border-radius: 25px;
 
-        }
-        .about{
-            grid-area:about;
-        border: dotted 1px red;
-       // width: 500px;
-       // height: 500px;
+      }
 
-        
-        }
-        .skill{
-            grid-area:skill;
-        border: 1px dotted red;
-       // width: 500px;
-       // height: 500px;
-
-        }
-        .future{
-            grid-area:future;
-        }
-        .contact{
-        grid-area: contact;
-        }
-        .img{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-    
-            img{
-                border-radius: 30%;
-                height: 10%;
-                width: 10%;
-            } 
     }
-}
+  }
 }

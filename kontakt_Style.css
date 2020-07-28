@@ -1,5 +1,17 @@
-html
-body header .CV {
+html,
+body {
+  height: 100%;
+}
+
+html header,
+body header {
+  text-align: center;
+  height: 100%;
+}
+
+html header .grid,
+body header .grid {
+  padding: 2%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "about img skill" "future img contact";
@@ -7,42 +19,18 @@ body header .CV {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  height: 100%;
 }
 
-html
-body header .about {
+html header .grid .img,
+body header .grid .img {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: about;
-  border: dotted 1px red;
-}
-
-html
-body header .skill {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: skill;
-  border: 1px dotted red;
-}
-
-html
-body header .future {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: future;
-}
-
-html
-body header .contact {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: contact;
-}
-
-html
-body header .img {
-  display: -ms-grid;
-  display: grid;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -51,10 +39,54 @@ body header .img {
           align-items: center;
 }
 
-html
-body header .img img {
-  border-radius: 30%;
-  height: 10%;
-  width: 10%;
+html header .grid .img img,
+body header .grid .img img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+html header .grid .about,
+body header .grid .about {
+  border: solid 2px #1f1e1e;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about;
+  border-radius: 25px;
+}
+
+html header .grid .skill,
+body header .grid .skill {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: skill;
+  border: solid 2px black;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+  border-radius: 25px;
+}
+
+html header .grid .future,
+body header .grid .future {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: future;
+  border: solid 2px black;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+  border-radius: 25px;
+}
+
+html header .grid .contact,
+body header .grid .contact {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: contact;
+  border: solid 2px black;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=kontakt_Style.css.map */

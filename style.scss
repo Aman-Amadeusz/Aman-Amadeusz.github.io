@@ -24,13 +24,14 @@ body{
                 top:-30vh;
                 left:-10vw;
                 transform: rotate(-10deg);
-                background-color:rgb(51, 49, 49);
+                background-color:rgba(0, 0, 0, 0.945);
                 box-shadow: 20px 20px 40px;
 
             }
             .down{
                 transform: rotate(-10deg);
-                background-color:rgb(51, 49, 49);
+                background-color:rgba(0, 0, 0, 0.945);
+                box-shadow: 20px 20px 40px 40px;
                 top:60vh;
                 left:-10vw;
             }
@@ -116,8 +117,6 @@ body{
             color: white;
             align-items: center;   
             text-align: center;
-            right: 0;
-            
             
         }
         .hide{

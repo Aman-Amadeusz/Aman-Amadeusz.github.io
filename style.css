@@ -29,7 +29,7 @@ body .firstScene .kurtyna .up {
   left: -10vw;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  background-color: #333131;
+  background-color: rgba(0, 0, 0, 0.945);
   -webkit-box-shadow: 20px 20px 40px;
           box-shadow: 20px 20px 40px;
 }
@@ -37,7 +37,9 @@ body .firstScene .kurtyna .up {
 body .firstScene .kurtyna .down {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  background-color: #333131;
+  background-color: rgba(0, 0, 0, 0.945);
+  -webkit-box-shadow: 20px 20px 40px 40px;
+          box-shadow: 20px 20px 40px 40px;
   top: 60vh;
   left: -10vw;
 }
@@ -153,7 +155,6 @@ body .bg .text {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  right: 0;
 }
 
 body .bg .hide {
