@@ -113,10 +113,12 @@ body{
             width: 100%;
         }
         .text{
+            margin: 5%;
+            width: 850px;
+            border: 1px dotted red;
             display: flex;
             color: white;
-            align-items: center;   
-            text-align: center;
+            align-items: center;
             
         }
         .hide{

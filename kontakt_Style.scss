@@ -22,30 +22,36 @@ body{
         justify-content: center;
         align-items: center;
         img{
+            box-shadow: 2px 2px 3px 3px;
             border-radius: 50%;
             width: 50%;
         }        
       }
       .about{
+          padding-top: 20px;;
           border: solid 2px rgb(31, 30, 30);
           box-shadow: 2px 2px 4px ;
-          text-align: center;  
           grid-area: about;
           border-radius: 25px;
       }
       .skill{
+        padding-top: 20px;;
         grid-area:skill ;
         border: solid 2px black;
         box-shadow: 2px 2px 4px ;
         border-radius: 25px;
       }
       .future{
+        padding-top: 20px;;
+        margin-top: 10px;
         grid-area: future;
         border: solid 2px black;
         box-shadow: 2px 2px 4px ;
         border-radius: 25px;
       }
       .contact{
+        padding-top: 20px;;
+        margin-top: 10px;
         grid-area:contact;
         border: solid 2px black;
         box-shadow: 2px 2px 4px;

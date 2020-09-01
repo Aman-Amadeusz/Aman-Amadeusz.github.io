@@ -41,16 +41,18 @@ body header .grid .img {
 
 html header .grid .img img,
 body header .grid .img img {
+  -webkit-box-shadow: 2px 2px 3px 3px;
+          box-shadow: 2px 2px 3px 3px;
   border-radius: 50%;
   width: 50%;
 }
 
 html header .grid .about,
 body header .grid .about {
+  padding-top: 20px;
   border: solid 2px #1f1e1e;
   -webkit-box-shadow: 2px 2px 4px;
           box-shadow: 2px 2px 4px;
-  text-align: center;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: about;
@@ -59,6 +61,7 @@ body header .grid .about {
 
 html header .grid .skill,
 body header .grid .skill {
+  padding-top: 20px;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: skill;
@@ -70,6 +73,8 @@ body header .grid .skill {
 
 html header .grid .future,
 body header .grid .future {
+  padding-top: 20px;
+  margin-top: 10px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: future;
@@ -81,6 +86,8 @@ body header .grid .future {
 
 html header .grid .contact,
 body header .grid .contact {
+  padding-top: 20px;
+  margin-top: 10px;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: contact;
