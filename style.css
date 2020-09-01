@@ -149,11 +149,10 @@ body .bg .quotes {
 body .bg .text {
   margin: 5%;
   width: 850px;
-  border: 1px dotted red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
