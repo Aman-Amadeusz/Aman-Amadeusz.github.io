@@ -62,7 +62,7 @@ body{
         justify-content: center;
         color: white;
     }
-    .bg{
+    .container{
     
         .menu{
             position: relative;
@@ -76,11 +76,12 @@ body{
             box-shadow: 10px 10px 20px;
             position: sticky;
             top: 0%;
+            text-align: center;
             cursor: pointer;
             display: flex;
             justify-content: space-evenly;
             width: 80%;
-            margin-top: 0;
+            margin-top: 0 ;
             margin-bottom: 0;
         }
         li{
@@ -117,7 +118,7 @@ body{
             width: 850px;
             display: flex;
             color: black;
-            align-items: center;
+            text-align: center;
             
         }
         .hide{
@@ -166,5 +167,8 @@ body{
 
         }
         
-
+#header
+{
+    float: left;
+}
 }
