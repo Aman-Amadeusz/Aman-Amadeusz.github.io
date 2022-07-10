@@ -1,9 +1,3 @@
-body {
-  background-image: url("img/dark_Village.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 body .firstScene {
   position: fixed;
   width: 100%;
@@ -30,16 +24,18 @@ body .firstScene .kurtyna .up {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   background-color: rgba(0, 0, 0, 0.945);
-  -webkit-box-shadow: 20px 20px 40px;
-          box-shadow: 20px 20px 40px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 20px 20px 40px #000,20px 20px 40px #000;
+          box-shadow: 20px 20px 40px #000,20px 20px 40px #000;
 }
 
 body .firstScene .kurtyna .down {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   background-color: rgba(0, 0, 0, 0.945);
-  -webkit-box-shadow: 20px 20px 40px 40px;
-          box-shadow: 20px 20px 40px 40px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 20px 20px 40px 40px #000, 20px 20px 40px 40px #000;
+          box-shadow: 20px 20px 40px 40px #000, 20px 20px 40px 40px #000;
   top: 60vh;
   left: -10vw;
 }
@@ -60,6 +56,22 @@ body .firstScene .password {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body .firstScene .firstInput {
+  color: #fff;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+}
+
+body .firstScene .firstInput:focus {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  outline: none;
 }
 
 body .secScene {
@@ -84,6 +96,63 @@ body .secScene {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+}
+
+body .secScene .frontWindow {
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 350px;
+  border: 2px solid #898c8f;
+}
+
+body .secScene .frontWindow .frontWindowSec {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  border: 1px solid #898c8f;
+}
+
+body .secScene .frontWindow .frontWindowSec .firstLink {
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+body .secScene .frontWindow .frontWindowSec .firstLink:hover {
+  color: #000;
+  text-shadow: 1px 1px 4px #fff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 body .container .menu {

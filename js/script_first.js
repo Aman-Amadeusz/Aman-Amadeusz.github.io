@@ -10,10 +10,12 @@ function firstInput(){
             up.style.top = (up.offsetTop-5)+"px";
             console.log("i");
             if(i > 100){
-                $(".firstScene").fadeOut("slow");
+                $(".firstScene").fadeOut(1200);
+                $(".frontWindow").hide();
                 clearInterval(kurtyna);
+                $(".frontWindow").fadeIn(4000,0,heartBeat());
             }
-        }, 50);
+        }, 32);
         
 
     }

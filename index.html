@@ -12,63 +12,51 @@
     <script src="js/script_first.js"></script>
 </head>
 <body>
+    <audio autoplay loop controls style='display: block;' id="firstAudio">
+        <source src="music/16 - necropolis towns.mp3" type="audio/mpeg">
+    </audio>
     <div class="firstScene"> 
         <div class="kurtyna">
             <div class="up"></div>
+            
             <div class="down"></div>
         </div>
         <div class="password">
             <input onkeyup='firstInput()' class="firstInput" type="password"/>
         </div>
+        <button type="button" style="width:12px;height: 12px;position: absolute;z-index: 10;" onclick="myMuted()"></button>
     </div>
     <div class="secScene">
-        <h2>Witaj na stronie</h2>
-        <button onclick="hideSecScene()">Przejdź</button>
+        <div class="frontWindow" >
+            <div class="frontWindowSec">
+                <a href="http://127.0.0.1:5502/main.html" class="firstLink">
+                    Welcome
+                </a>
+            </div>
+        </div>
     </div>
     
-    <div class="container">
-        <audio autoplay loop controls>
-            <source src="music/16 - necropolis towns.mp3" type="audio/mpeg">
-        </audio>
-    <header id="header">
-            <ul>
-                <li><a href="/"><i class="par pa-home"></i>Głowna</a></li>
-                <li class="Forum">
-                    <a href="Forum.html">Forum</a>
-                    <div class="dropdown-content"> 
-                        <a href="groups">Grupy</a>
-                    </div>
-                </li>
-                <li class="chat"><a href="chat.html">Chat</a>                
-                    <div class="dropdown-content">
-                        <a href="uzytkownicy">Użytkownicy</a>
-                    </div>
-                </li>
-                <li class="kontakt"><a href="kontakt.html">kontakt</a>
-                </li>
-            </ul>
-
-            <div class="quotes">
-                <div class="text">
-                    <h1>Ta Strona będzie cały czas rozwijana
-                    </h1>
-                     </div>
-                <div class="hide">
-                    <a href="https://www.facebook.com/">
-                        <i class="icon icon-facebook"></i>
-                    </a>
-                    <a href="mailto:nowacki.amadeusz@gmail.com">
-                        <i class="icon icon-mail"></i>
-                    </a>
-                </div> 
-            </div>
-
-    </header>
-    <footer>
-        <p style="color: white; text-align: right; clear: both;">&copy;Copyright by Amadeusz Nowacki</p>
-    </footer>
-    </div>
+  
     <script src="js/script.js"></script>
+
+    <script src="js/heart.js"></script>
+
+    <script>
+         
+          
+  
+        function myMuted(){
+            let change = false;
+            mutedTrue = document.getElementById("firstAudio").muted = true;
+            if(mutedTrue == true){
+                
+                let change = true;
+                
+            }
+            
+
+        }
+    </script>
 
 
 

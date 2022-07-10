@@ -1,9 +1,4 @@
 body{      
-    background-image: url("img/dark_Village.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
     .firstScene{
         position: fixed;
         width:100%;
@@ -25,13 +20,15 @@ body{
                 left:-10vw;
                 transform: rotate(-10deg);
                 background-color:rgba(0, 0, 0, 0.945);
-                box-shadow: 20px 20px 40px;
+                border:1px solid #000;
+                box-shadow: 20px 20px 40px #000,20px 20px 40px #000;
 
             }
             .down{
                 transform: rotate(-10deg);
                 background-color:rgba(0, 0, 0, 0.945);
-                box-shadow: 20px 20px 40px 40px;
+                border:1px solid #000;
+                box-shadow: 20px 20px 40px 40px #000, 20px 20px 40px 40px #000;
                 top:60vh;
                 left:-10vw;
             }
@@ -47,6 +44,20 @@ body{
             justify-content: center;
             align-items: center;
         }
+        .firstInput{
+            color:#fff;
+            width:120px;
+            height:20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border:1px solid #000
+        }
+        .firstInput:focus{
+            color: #fff;
+            background-color:#000;
+            border:1px solid #fff;
+            outline: none;
+        }
     }
     .secScene{
         width:100%;
@@ -61,6 +72,43 @@ body{
         align-items: center;
         justify-content: center;
         color: white;
+
+        .frontWindow{
+            width:350px;
+            height: 350px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 350px;
+            border:2px solid rgb(137, 140, 143);
+            
+            .frontWindowSec{
+                width:300px;
+                height:300px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0);
+                border-radius: 50%;
+                border:1px solid rgb(137, 140, 143);
+
+                .firstLink{
+                    color: #fff;
+                    font-size: 32px;
+                    text-decoration: none;
+                    transition-duration: 5s;
+                }
+
+                .firstLink:hover{
+                    color: #000;
+                    text-shadow: 1px 1px 4px #fff;
+                    transition-duration: 0.8s;
+                }
+            }
+        }
     }
     .container{
     
