@@ -24,7 +24,7 @@
         <div class="password">
             <input onkeyup='firstInput()' class="firstInput" type="password"/>
         </div>
-        <button type="button" style="width:12px;height: 12px;position: absolute;z-index: 10;" onclick="myMuted()"></button>
+        <button type="button" style="width:16px;height:16px;position:absolute;z-index:10;top:49%;left:45%;background-color: #000;border:1px solid #fff" onclick="myToggle()"></button>
     </div>
     <div class="secScene">
         <div class="frontWindow" >
@@ -42,19 +42,14 @@
     <script src="js/heart.js"></script>
 
     <script>
-         
-          
-  
-        function myMuted(){
-            let change = false;
-            mutedTrue = document.getElementById("firstAudio").muted = true;
-            if(mutedTrue == true){
-                
-                let change = true;
-                
+        function myToggle(){
+            let mutedtoggle = document.getElementById("firstAudio").muted;
+            let firstAudio = document.getElementById("firstAudio");
+            if(mutedtoggle == false){ 
+                firstAudio.muted = true;
+            }else{
+                firstAudio.muted = false;
             }
-            
-
         }
     </script>
 
