@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=main_style.css.map */
+body {
+  background-color: #181818;
+  margin: 0;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 964px;
+  background-color: #181818;
+}
+
+body .container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  width: 65%;
+  height: 60%;
+}
+
+body .container .main .left {
+  width: 2%;
+  border: 3px solid red;
+}
+
+body .container .main .mainNav {
+  border: 3px solid purple;
+  width: 96%;
+}
+
+body .container .main .right {
+  border: 3px solid red;
+  width: 2%;
+}
+/*# sourceMappingURL=main_style.css.map */

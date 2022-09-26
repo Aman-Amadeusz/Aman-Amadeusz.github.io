@@ -1,0 +1,38 @@
+body{
+    background-color: #181818;
+    margin:0;
+   
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:964px;
+        background-color: #181818;
+
+
+
+        .main{
+            display:flex;
+            background-color: #fff;
+            position: relative;
+            width:65%;
+            height: 60%;
+
+                .left{
+                    width: 2%;
+                    border:3px solid red;
+                }
+
+                .mainNav{
+                    border:3px solid purple;
+                    width: 96%;
+                }
+                .right{
+                    border:3px solid red;
+                    width: 2%;
+                }
+        }
+        
+        
+    }
+}
