@@ -1,5 +1,5 @@
 function heartBeat(){
-    let heart = new Audio ("music/heart-beat.wav");
+    //let heart = new Audio ("music/heart-beat.wav");
     let radius = document.querySelector(".frontWindowSec");
     let secScene = document.querySelector(".secScene");
     let frontWindow = document.querySelector(".frontWindow");
