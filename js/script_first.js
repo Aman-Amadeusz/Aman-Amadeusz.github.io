@@ -1,6 +1,6 @@
 function firstInput(){
     let valueX = document.querySelector(".firstInput");
-    if(valueX.value == "a"){
+    if(valueX.value == ""){
         let up = document.querySelector(".up");
         let down = document.querySelector(".down");
         let i = 0;
